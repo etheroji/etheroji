@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Emoji Smash!</title>
+
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="/bootstrap-3.3.7.min.css" rel="stylesheet" type="text/css">
+  <link href="/bootstrap-theme-3.3.7.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="/html5shiv-3.7.3.min.js"></script>
+  <script src="/respond-1.4.2.min.js"></script>
+<![endif]-->
+
+  <script src="/jquery-3.2.1.min.js"></script>
+  <script src="/bootstrap-3.3.7.min.js"></script>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img alt="Etheroji" src="/navbar-logo.png"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/buy/">Buy now!</a></li>
+        <li><a href="/wtf/">WTF?!</a></li>
+<!--        <li><a href="/games/smash/">Play Emoji Smash!</a></li> -->
+        <li><a>Total sold: <span id="total-spent">0.3</span> ETH</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="smash-container">
+    <div class="heading">
+      <h1 class="title">Emoji Smash!</h1>
+      <p class="game-intro">Join the top emojis from <a href="http://etheroji.com">Etheroji</a> and get to the <strong>😎 tile!</strong></p>
+    </div>
+
+    <div class="above-game">
+      <a class="restart-button">New Game</a>
+      <div class="score-container">0</div>
+      <div class="best-container">0</div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> or <strong>swipe</strong> to move the tiles. When two tiles with the same emoji touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+      This game is based on <a href="https://gabrielecirulli.github.io/2048/">2048</a> by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a>
+    </p>
+  </div>
+
+  <script src="emojis.js"></script>
+  <script src="script-44506e98b1d8fa2ae534e6692bc7a3e21f504f1e.js"></script>
+</body>
+</html>
+
