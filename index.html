@@ -103,10 +103,6 @@
     
       ga('create', 'UA-109190963-1', 'auto');
       ga('send', 'pageview');
-    
-      $('.twitter').on('click', function() {
-        ga('send', 'event', 'holding-twitter',  'click',  '');
-      });
     </script>
     
     <script>
@@ -120,6 +116,13 @@
           a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
       }, 1000);
+    </script>
+
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script>
+      $('.twitter').on('click', function() {
+        ga('send', 'event', 'holding-twitter',  'click',  '');
+      });
     </script>
   </body>
 </html>
